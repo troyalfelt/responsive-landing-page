@@ -1,0 +1,10 @@
+/* General Styles */
+/* Apply to all sizes */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+/* Add Breakpoints Here */
+/* Apply to certain size and above */
+
