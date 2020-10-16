@@ -2,9 +2,126 @@
 /* Apply to all sizes */
 *, *:before, *:after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+h3 {
+  background-color: lightgray;
+  display: : block;
+  width: 100%;
+  height: 20%;
+  text-align: center;
 
+}
+#search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sub-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.super-benefits {
+  display: flex;
+}
+.sub-benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#listings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub-listings {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-style: solid;
+  width: 300px;
+}
+.disappearing {
+  height: 0;
+  width: 0;
+}
+#bottom-container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: lightgray;
+  width: 100vpw;
+}
+#bottom {
+  display: flex;
+  flex-direction: column;
+}
+#bottom p {
+  text-align: right;
+}
+#top-nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#bottom-nav {
+  display: flex;
+  justify-content: space-around;
+}
+.button {
+  background-color: gold;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+.price {
+  font-weight: bold;
+  font-size: 2em;
+}
+#header-image {
+  width: 400px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+h2+p {
+  text-align: center;
+  margin: 8px;
+}
 /* Add Breakpoints Here */
 /* Apply to certain size and above */
+@media only screen and (min-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vpw;
+  }
+  header nav a {
+    margin: 5px;
+  }
+  #top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 100px;
+    width: 100%
+  }
+  #header-image {
+    margin-right: 100px;
+  }
 
+}
